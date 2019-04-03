@@ -1,0 +1,5 @@
+book_filename: "pem-lab"
+output_dir: "documentation"
+language:
+  ui:
+delete_merged_file: true

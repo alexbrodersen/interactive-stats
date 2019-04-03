@@ -1,0 +1,33 @@
+--- 
+title: "Psychological and Educational Measurement Lab | Notre Dame"
+date: "Last Updated: `r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Introduction
+
+Welcome to the Psychological and Educational Measurement Lab at the University of Notre Dame.
+
+This is a **bookdown** document that is intended to be living documentation for all activities that need to be accomplished in our lab. By carefully reading all of this documentation, you will develop a set of valuable skills.
+
+Specifically, we hope that you will learn
+
+1. Data Visualization
+2. Programming (R, Python, Javascript, SQL)
+3. Statistics
+    + Psychometrics
+    + Data Science
+4. Research Design in Psychology
+5. Educational Research Methodology
+6. Online Data Collection
+7. Version Control
+
+
+Intermixed in the documentation and learning materials, you may find quizzes to evaluate your learning. These quizzes are linked to your personal login account and help us know that you have successfully completed a module that is relevent. The more modules you complete, the better you will be able to help out the lab.

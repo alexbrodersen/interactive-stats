@@ -1,0 +1,11 @@
+# Applications
+
+Some _significant_ applications are demonstrated in this chapter.
+
+```r
+print("hello world")
+```
+
+## Example one
+
+## Example two
