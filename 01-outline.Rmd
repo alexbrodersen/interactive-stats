@@ -1,0 +1,410 @@
+    
+
+# Exploring Data
+
+**Describing patterns and departures from patterns**
+
+Exploratory analysis of data makes use of graphical and numerical techniques to study patterns and departures from patterns. Emphasis should be placed on interpreting information from graphical and numerical displays and summaries.
+
+## Constructing and interpreting plots
+
+*Constructing and interpreting graphical displays of distributions of univariate data*
+
+### Understanding dotplot
+
+### Understanding stemplot
+
+### Understanding histogram
+
+### Understanding cumulative frequency plot
+
+### Locating Center from a graph
+
+### Locating Spread from a graph
+
+### Identifying (a)symmetry of graph
+
+### Identifying modality of graph
+
+### Identifying a point from a graph using scales and labels
+
+
+## Summary Statistics
+
+**Summarizing distributions of univariate data**
+
+### Calculating median 
+
+### Calculating mean 
+
+### Knowing the appropriate context to use median over mean or vice versa
+
+### Calculating range
+
+### Calculating interquartile range (IQR)
+
+### Calculating variance
+
+### Calculating standard deviation
+
+### Recognizing difference between sample and population standard deviation
+
+### Knowing appropriate context to use IQR over standard deviation
+
+### Calculating z-score given a raw score, and the mean and sd (from X to z)
+
+### Interpret z-scores (number of SDs above/below mean)
+
+### Calculating quartiles
+
+### Interpreting percentiles
+
+### Comparing positions within data (percentile, quantile, standard scores)
+
+### Determining effect of changing units on summary statistics
+
+### Identifying a correct boxplot
+
+### Interpreting values within a boxplot
+
+### Calculating outliers using fence
+
+### Comparing distributions of data
+
+
+**Comparing distributions of univariate data (dotplots back-to-back stemplots parallel boxplots)**
+			
+### Comparing and interpreting centers 
+
+### Comparing and interpreting spreads
+
+### Comparing and interpreting shapes
+
+### Comparing and interpreting clusters/gaps 
+
+### Comparing and interpreting outlier
+
+
+## Exploring bivariate data
+
+**Exploring bivariate data**
+
+### Identifying shape, direction, strength of a Scatterplot
+
+
+### Knowing properties of a Correlation coefficient
+
+
+### Interpreting coefficient of determination: R square 
+
+
+### Writing Least Squares Regression Line (LSRL)from computer output
+
+### Obtaining LSRL from dataset
+
+### Writing LSRL from summary statistics (using b1=r*(sy/sx) formula) (not likely)
+
+### Interpreting slope
+
+### Interpreting intercept
+
+### Finding a predicted y-hat or based on y-hat to find x given the regression equation
+
+### Finding a residual value given the regression equation
+
+### Interpreting a residual
+
+### Using residual plot to determine if transformation is needed, i.e., is linear model appropriate
+
+### Understanding lower reliability in extrapolation 
+
+### Identifying influential points and their impact on model (leverage)
+
+### Identifying correct re-expression (log, power, exponential)
+
+### Correctly calculating a predicted value under a transformation (log/power/exponential
+
+
+##  Categorical Data
+
+**Exploring categorical data**
+
+### Knowing the Difference between categorical and quantitative variables
+
+### Calculating Marginal frequencies for two-way tables
+
+### Calculating Joint frequencies for two-way tables
+
+### Calculating Conditional relative frequencies 
+
+### Infer Association between categorical variables
+
+### Comparing distributions using bar charts with relative frequencies
+
+		    
+# Sampling and Experimentation
+
+**Planning and conducting a study**
+
+Data must be collected according to a well-developed plan if valid information on a conjecture is to be obtained. This plan includes clarifying the question and deciding upon a method of data collection and analysis.
+
+## Methods of data collection
+
+**Overview of methods of data collection**
+
+###  Knowing census is a collection of info. from the entire population 
+
+### Knowing the distinction between experimental and observational stud
+
+
+## Planning and conducting surveys
+
+**Planning and conducting surveys**
+
+### Knowing a well conducted and designed survey must be random
+
+### Knowing a well conducted and designed survey must minimize bias
+
+### Knowing the population of interest for a sample survey
+
+### Distinguishing between population parameter and sample statistics
+
+### Identifying a sample was collected randomly (addresses when sample collected with voluntary or convenience) 
+
+### Understanding what a response and non-response bias is
+
+### Identifying when a sample is collected using a simple random sample
+
+### Identifying when a sample is collected using stratified random sample
+
+### Identifying when a sample is collected using cluster random sample
+
+
+## Planning and conducting experiments
+
+**Planning and conducting experiments**
+
+### Knowing in an experiment that treatments are assigned randomly
+
+### Knowing in an experiment that treatments are replicated to many subjects/experimental units
+
+### Understanding the benefit for a control group
+
+### Identifying # of treatments from a multi-factor experiment (in curriculum?)
+
+### Identifying the experimental units in an experiment
+
+### Knowing to control variables that are not a factor of an experiment (in curriculum?)
+
+### Knowing the purpose of random assignment in experiments
+
+### Understanding the difference between none, single and double blinded experiments
+
+### Understanding that blinding helps prevent bias in experiment
+
+### Understanding the purpose of blocking in an experiment
+
+### Identifying between completely randomized and randomized block design
+
+### Identifying a matched pairs design
+
+
+## Generalizability of results
+
+**Generalizability of results and types of conclusions that can be drawn from observational studies experiments and surveys**
+
+### Knowing experimental studies can show causation whereas observational studies do not
+
+### Knowing experimental results can only be generalized to those represented by the experimental unit
+
+## Miscellaneous
+
+**Miscellaneous**
+
+### When to use stratified vs. cluster sampling (homogeneous groups vs heterogeneous group)
+
+#### Random sampling variability 
+
+#### Identifying confounding variable
+
+
+# Anticipating Patterns
+
+**Exploring random phenomena using probability and simulation**
+
+Probability is the tool used for anticipating what the distribution of data should look like under a given model.
+
+## Probability
+
+**Probability**
+
+### Interpreting probability as a long-run relative frequency interpretation
+
+### Understanding the Law of Large Numbers
+
+### Understanding and correctly applying the Addition Rule
+
+### Understanding and correctly applying the Multiplication Rule
+
+### Calculating conditional probability
+
+### Recognizing independent events
+
+### Recognizing disjoint (mutually exclusive) events
+
+### Distinguishing between discrete and continuous random variables
+
+### Recognizing a binomial random variable
+
+### Computinga binomial probability
+
+### Recognizing a geometric random variable
+
+### Computing a geometric probability
+
+### Computing cumulative probability of a discrete random variable
+
+### Interpreting a simulation of random behavior or a simulated probability distribution
+
+### Calculating the mean (expected value) of a discrete random variable
+
+### Calculating the standard deviation of a discrete random variable
+
+### Understanding the effects of a linear transformation on a random variable (i.e. on the measures of center and spread)
+
+### Using common structures to analyze probability problems (Venn diagram, tree, table
+
+
+## Combining Independent random variables
+
+### Distinguishing between independent and dependent events
+
+### Calculating the mean for the sum or the difference of independent random variables
+
+### Calculating the standard deviation for the sum or the difference of independent random variables
+
+## Normal Distribution
+
+### Understanding the characteristics of the normal distribution (symmetric, 68-95-99.7 rule, unimodal, etc.)
+
+### Calculating a probability using the z-score and the standard normal distribution (e.g., normcdf)
+
+### Calculating a z-score using probabilities on a normal distribution(e.g., norminv)
+
+### Calculating the raw-score given a z-score (from z to X) 
+
+### Using the normal distribution to model and calculate measurements from a contextual application
+
+## Sampling distributions
+
+### Interpreting the concept of a sampling distribution
+
+### Describing the sampling distribution of a sample proportion (shape, center, spread)
+
+### Describing the sampling distribution of a sample mean (shape, center, spread)
+
+### Applying the Central Limit Theorem
+
+### Describing the sampling distribution of the difference between two independent sample proportions (shape, center, spread)
+
+### Describing the sampling distribution of the difference between two independent sample means (shape, center, spread)
+
+### Interpreting a simulation of a sampling distribution
+
+### Understanding characteristics of a t-distribution
+
+### Using the t-distribution to calculate a probability
+
+### Using the t-distribution to obtain a t score (critical value)
+
+### Understanding the differences between a t-distribution and a normal distribution
+
+### Understanding the characteristics of the chi-square distribution
+
+### Using the chi-square to calculate probability 
+
+# Statistical Inference
+
+**Estimating population parameters and testing hypotheses**
+
+Statistical inference guides the selection of appropriate models.
+
+## Estimation
+
+**Estimation (point estimators and confidence intervals)**
+
+### Margins of error vs standard error
+
+### Margin of error/interval length, i.e., interaction with sample size and/or level of confidence
+
+### Logic of confidence intervals
+
+### Interpreting confidence level
+
+### Computing Large sample confidence interval for a proportion
+
+### Computing Large sample confidence interval for a difference between two proportions
+
+### Computing Confidence interval for a mean
+
+### Computing Confidence interval for a difference between two means: unpaired 
+
+### Computing Confidence interval for a difference between two means:  paired
+
+### Computing Confidence interval for the slope of a least-squares regression line
+
+
+## Tests of significance
+
+**Tests of significance**
+
+### Logic of significance testing, null and alternative hypotheses
+
+### Concept of p-values (e.g., using NORMCDF given a critical value) 
+
+### Interpretation of a p-value (e.g., percentage of times the sample result will occur if the null is true)
+
+### Understanding/Comparing one-and two-sided tests
+
+### Concepts of Type I error
+
+### Concept of Type II errors
+
+### Concept of power
+
+### Relationship among type-I and type-II errors and power
+
+### Effect of changing sample size on type II error, power for fixed level of significance
+
+### Conditions for inference for a proportion
+
+### Performing Large sample test for a proportion
+
+### Conditions for inference for difference in two proportions
+
+### Performing Large sample test for a difference between two proportions
+
+### Conditions for inference for a mean
+
+### Performing Test for a mean
+
+### Conditions for inference for a difference between two means
+
+### Performing test for a difference between two means: unpaired (t-test)
+
+### Performing Test for a difference between two means: paired (t-test)
+
+### Conditions for Chi-square test
+
+### Performing Chi-square test for goodness of fit
+
+### Performing Chi-square test for homogeneity of proportions
+
+### Performing Chi-square test for independence (two-way tables)
+
+### Performing Test for the slope of a least-squares regression line
+
+### Parallel between 2-sided test and confidence interval for the means
+
+### Making decision/conclusion by comparing p-value and alpha {r rnorm(10)}
+

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>3 Sampling and Experimentation | Psychological and Educational Measurement Lab | Notre Dame</title>
+  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+
+  <meta property="og:title" content="3 Sampling and Experimentation | Psychological and Educational Measurement Lab | Notre Dame" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Sampling and Experimentation | Psychological and Educational Measurement Lab | Notre Dame" />
+  
+  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="exploring-data.html">
+<link rel="next" href="anticipating-patterns.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="exploring-data.html"><a href="exploring-data.html"><i class="fa fa-check"></i><b>2</b> Exploring Data</a><ul>
+<li class="chapter" data-level="2.1" data-path="exploring-data.html"><a href="exploring-data.html#constructing-and-interpreting-plots"><i class="fa fa-check"></i><b>2.1</b> Constructing and interpreting plots</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="exploring-data.html"><a href="exploring-data.html#understanding-dotplot"><i class="fa fa-check"></i><b>2.1.1</b> Understanding dotplot</a></li>
+<li class="chapter" data-level="2.1.2" data-path="exploring-data.html"><a href="exploring-data.html#understanding-stemplot"><i class="fa fa-check"></i><b>2.1.2</b> Understanding stemplot</a></li>
+<li class="chapter" data-level="2.1.3" data-path="exploring-data.html"><a href="exploring-data.html#understanding-histogram"><i class="fa fa-check"></i><b>2.1.3</b> Understanding histogram</a></li>
+<li class="chapter" data-level="2.1.4" data-path="exploring-data.html"><a href="exploring-data.html#understanding-cumulative-frequency-plot"><i class="fa fa-check"></i><b>2.1.4</b> Understanding cumulative frequency plot</a></li>
+<li class="chapter" data-level="2.1.5" data-path="exploring-data.html"><a href="exploring-data.html#locating-center-from-a-graph"><i class="fa fa-check"></i><b>2.1.5</b> Locating Center from a graph</a></li>
+<li class="chapter" data-level="2.1.6" data-path="exploring-data.html"><a href="exploring-data.html#locating-spread-from-a-graph"><i class="fa fa-check"></i><b>2.1.6</b> Locating Spread from a graph</a></li>
+<li class="chapter" data-level="2.1.7" data-path="exploring-data.html"><a href="exploring-data.html#identifying-asymmetry-of-graph"><i class="fa fa-check"></i><b>2.1.7</b> Identifying (a)symmetry of graph</a></li>
+<li class="chapter" data-level="2.1.8" data-path="exploring-data.html"><a href="exploring-data.html#identifying-modality-of-graph"><i class="fa fa-check"></i><b>2.1.8</b> Identifying modality of graph</a></li>
+<li class="chapter" data-level="2.1.9" data-path="exploring-data.html"><a href="exploring-data.html#identifying-a-point-from-a-graph-using-scales-and-labels"><i class="fa fa-check"></i><b>2.1.9</b> Identifying a point from a graph using scales and labels</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="exploring-data.html"><a href="exploring-data.html#summary-statistics"><i class="fa fa-check"></i><b>2.2</b> Summary Statistics</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="exploring-data.html"><a href="exploring-data.html#calculating-median"><i class="fa fa-check"></i><b>2.2.1</b> Calculating median</a></li>
+<li class="chapter" data-level="2.2.2" data-path="exploring-data.html"><a href="exploring-data.html#calculating-mean"><i class="fa fa-check"></i><b>2.2.2</b> Calculating mean</a></li>
+<li class="chapter" data-level="2.2.3" data-path="exploring-data.html"><a href="exploring-data.html#knowing-the-appropriate-context-to-use-median-over-mean-or-vice-versa"><i class="fa fa-check"></i><b>2.2.3</b> Knowing the appropriate context to use median over mean or vice versa</a></li>
+<li class="chapter" data-level="2.2.4" data-path="exploring-data.html"><a href="exploring-data.html#calculating-range"><i class="fa fa-check"></i><b>2.2.4</b> Calculating range</a></li>
+<li class="chapter" data-level="2.2.5" data-path="exploring-data.html"><a href="exploring-data.html#calculating-interquartile-range-iqr"><i class="fa fa-check"></i><b>2.2.5</b> Calculating interquartile range (IQR)</a></li>
+<li class="chapter" data-level="2.2.6" data-path="exploring-data.html"><a href="exploring-data.html#calculating-variance"><i class="fa fa-check"></i><b>2.2.6</b> Calculating variance</a></li>
+<li class="chapter" data-level="2.2.7" data-path="exploring-data.html"><a href="exploring-data.html#calculating-standard-deviation"><i class="fa fa-check"></i><b>2.2.7</b> Calculating standard deviation</a></li>
+<li class="chapter" data-level="2.2.8" data-path="exploring-data.html"><a href="exploring-data.html#recognizing-difference-between-sample-and-population-standard-deviation"><i class="fa fa-check"></i><b>2.2.8</b> Recognizing difference between sample and population standard deviation</a></li>
+<li class="chapter" data-level="2.2.9" data-path="exploring-data.html"><a href="exploring-data.html#knowing-appropriate-context-to-use-iqr-over-standard-deviation"><i class="fa fa-check"></i><b>2.2.9</b> Knowing appropriate context to use IQR over standard deviation</a></li>
+<li class="chapter" data-level="2.2.10" data-path="exploring-data.html"><a href="exploring-data.html#calculating-z-score-given-a-raw-score-and-the-mean-and-sd-from-x-to-z"><i class="fa fa-check"></i><b>2.2.10</b> Calculating z-score given a raw score, and the mean and sd (from X to z)</a></li>
+<li class="chapter" data-level="2.2.11" data-path="exploring-data.html"><a href="exploring-data.html#interpret-z-scores-number-of-sds-abovebelow-mean"><i class="fa fa-check"></i><b>2.2.11</b> Interpret z-scores (number of SDs above/below mean)</a></li>
+<li class="chapter" data-level="2.2.12" data-path="exploring-data.html"><a href="exploring-data.html#calculating-quartiles"><i class="fa fa-check"></i><b>2.2.12</b> Calculating quartiles</a></li>
+<li class="chapter" data-level="2.2.13" data-path="exploring-data.html"><a href="exploring-data.html#interpreting-percentiles"><i class="fa fa-check"></i><b>2.2.13</b> Interpreting percentiles</a></li>
+<li class="chapter" data-level="2.2.14" data-path="exploring-data.html"><a href="exploring-data.html#comparing-positions-within-data-percentile-quantile-standard-scores"><i class="fa fa-check"></i><b>2.2.14</b> Comparing positions within data (percentile, quantile, standard scores)</a></li>
+<li class="chapter" data-level="2.2.15" data-path="exploring-data.html"><a href="exploring-data.html#determining-effect-of-changing-units-on-summary-statistics"><i class="fa fa-check"></i><b>2.2.15</b> Determining effect of changing units on summary statistics</a></li>
+<li class="chapter" data-level="2.2.16" data-path="exploring-data.html"><a href="exploring-data.html#identifying-a-correct-boxplot"><i class="fa fa-check"></i><b>2.2.16</b> Identifying a correct boxplot</a></li>
+<li class="chapter" data-level="2.2.17" data-path="exploring-data.html"><a href="exploring-data.html#interpreting-values-within-a-boxplot"><i class="fa fa-check"></i><b>2.2.17</b> Interpreting values within a boxplot</a></li>
+<li class="chapter" data-level="2.2.18" data-path="exploring-data.html"><a href="exploring-data.html#calculating-outliers-using-fence"><i class="fa fa-check"></i><b>2.2.18</b> Calculating outliers using fence</a></li>
+<li class="chapter" data-level="2.2.19" data-path="exploring-data.html"><a href="exploring-data.html#comparing-distributions-of-data"><i class="fa fa-check"></i><b>2.2.19</b> Comparing distributions of data</a></li>
+<li class="chapter" data-level="2.2.20" data-path="exploring-data.html"><a href="exploring-data.html#comparing-and-interpreting-centers"><i class="fa fa-check"></i><b>2.2.20</b> Comparing and interpreting centers</a></li>
+<li class="chapter" data-level="2.2.21" data-path="exploring-data.html"><a href="exploring-data.html#comparing-and-interpreting-spreads"><i class="fa fa-check"></i><b>2.2.21</b> Comparing and interpreting spreads</a></li>
+<li class="chapter" data-level="2.2.22" data-path="exploring-data.html"><a href="exploring-data.html#comparing-and-interpreting-shapes"><i class="fa fa-check"></i><b>2.2.22</b> Comparing and interpreting shapes</a></li>
+<li class="chapter" data-level="2.2.23" data-path="exploring-data.html"><a href="exploring-data.html#comparing-and-interpreting-clustersgaps"><i class="fa fa-check"></i><b>2.2.23</b> Comparing and interpreting clusters/gaps</a></li>
+<li class="chapter" data-level="2.2.24" data-path="exploring-data.html"><a href="exploring-data.html#comparing-and-interpreting-outlier"><i class="fa fa-check"></i><b>2.2.24</b> Comparing and interpreting outlier</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="exploring-data.html"><a href="exploring-data.html#exploring-bivariate-data"><i class="fa fa-check"></i><b>2.3</b> Exploring bivariate data</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="exploring-data.html"><a href="exploring-data.html#identifying-shape-direction-strength-of-a-scatterplot"><i class="fa fa-check"></i><b>2.3.1</b> Identifying shape, direction, strength of a Scatterplot</a></li>
+<li class="chapter" data-level="2.3.2" data-path="exploring-data.html"><a href="exploring-data.html#knowing-properties-of-a-correlation-coefficient"><i class="fa fa-check"></i><b>2.3.2</b> Knowing properties of a Correlation coefficient</a></li>
+<li class="chapter" data-level="2.3.3" data-path="exploring-data.html"><a href="exploring-data.html#interpreting-coefficient-of-determination-r-square"><i class="fa fa-check"></i><b>2.3.3</b> Interpreting coefficient of determination: R square</a></li>
+<li class="chapter" data-level="2.3.4" data-path="exploring-data.html"><a href="exploring-data.html#writing-least-squares-regression-line-lsrlfrom-computer-output"><i class="fa fa-check"></i><b>2.3.4</b> Writing Least Squares Regression Line (LSRL)from computer output</a></li>
+<li class="chapter" data-level="2.3.5" data-path="exploring-data.html"><a href="exploring-data.html#obtaining-lsrl-from-dataset"><i class="fa fa-check"></i><b>2.3.5</b> Obtaining LSRL from dataset</a></li>
+<li class="chapter" data-level="2.3.6" data-path="exploring-data.html"><a href="exploring-data.html#writing-lsrl-from-summary-statistics-using-b1rsysx-formula-not-likely"><i class="fa fa-check"></i><b>2.3.6</b> Writing LSRL from summary statistics (using b1=r*(sy/sx) formula) (not likely)</a></li>
+<li class="chapter" data-level="2.3.7" data-path="exploring-data.html"><a href="exploring-data.html#interpreting-slope"><i class="fa fa-check"></i><b>2.3.7</b> Interpreting slope</a></li>
+<li class="chapter" data-level="2.3.8" data-path="exploring-data.html"><a href="exploring-data.html#interpreting-intercept"><i class="fa fa-check"></i><b>2.3.8</b> Interpreting intercept</a></li>
+<li class="chapter" data-level="2.3.9" data-path="exploring-data.html"><a href="exploring-data.html#finding-a-predicted-y-hat-or-based-on-y-hat-to-find-x-given-the-regression-equation"><i class="fa fa-check"></i><b>2.3.9</b> Finding a predicted y-hat or based on y-hat to find x given the regression equation</a></li>
+<li class="chapter" data-level="2.3.10" data-path="exploring-data.html"><a href="exploring-data.html#finding-a-residual-value-given-the-regression-equation"><i class="fa fa-check"></i><b>2.3.10</b> Finding a residual value given the regression equation</a></li>
+<li class="chapter" data-level="2.3.11" data-path="exploring-data.html"><a href="exploring-data.html#interpreting-a-residual"><i class="fa fa-check"></i><b>2.3.11</b> Interpreting a residual</a></li>
+<li class="chapter" data-level="2.3.12" data-path="exploring-data.html"><a href="exploring-data.html#using-residual-plot-to-determine-if-transformation-is-needed-i.e.-is-linear-model-appropriate"><i class="fa fa-check"></i><b>2.3.12</b> Using residual plot to determine if transformation is needed, i.e., is linear model appropriate</a></li>
+<li class="chapter" data-level="2.3.13" data-path="exploring-data.html"><a href="exploring-data.html#understanding-lower-reliability-in-extrapolation"><i class="fa fa-check"></i><b>2.3.13</b> Understanding lower reliability in extrapolation</a></li>
+<li class="chapter" data-level="2.3.14" data-path="exploring-data.html"><a href="exploring-data.html#identifying-influential-points-and-their-impact-on-model-leverage"><i class="fa fa-check"></i><b>2.3.14</b> Identifying influential points and their impact on model (leverage)</a></li>
+<li class="chapter" data-level="2.3.15" data-path="exploring-data.html"><a href="exploring-data.html#identifying-correct-re-expression-log-power-exponential"><i class="fa fa-check"></i><b>2.3.15</b> Identifying correct re-expression (log, power, exponential)</a></li>
+<li class="chapter" data-level="2.3.16" data-path="exploring-data.html"><a href="exploring-data.html#correctly-calculating-a-predicted-value-under-a-transformation-logpowerexponential"><i class="fa fa-check"></i><b>2.3.16</b> Correctly calculating a predicted value under a transformation (log/power/exponential</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="exploring-data.html"><a href="exploring-data.html#categorical-data"><i class="fa fa-check"></i><b>2.4</b> Categorical Data</a><ul>
+<li class="chapter" data-level="2.4.1" data-path="exploring-data.html"><a href="exploring-data.html#knowing-the-difference-between-categorical-and-quantitative-variables"><i class="fa fa-check"></i><b>2.4.1</b> Knowing the Difference between categorical and quantitative variables</a></li>
+<li class="chapter" data-level="2.4.2" data-path="exploring-data.html"><a href="exploring-data.html#calculating-marginal-frequencies-for-two-way-tables"><i class="fa fa-check"></i><b>2.4.2</b> Calculating Marginal frequencies for two-way tables</a></li>
+<li class="chapter" data-level="2.4.3" data-path="exploring-data.html"><a href="exploring-data.html#calculating-joint-frequencies-for-two-way-tables"><i class="fa fa-check"></i><b>2.4.3</b> Calculating Joint frequencies for two-way tables</a></li>
+<li class="chapter" data-level="2.4.4" data-path="exploring-data.html"><a href="exploring-data.html#calculating-conditional-relative-frequencies"><i class="fa fa-check"></i><b>2.4.4</b> Calculating Conditional relative frequencies</a></li>
+<li class="chapter" data-level="2.4.5" data-path="exploring-data.html"><a href="exploring-data.html#infer-association-between-categorical-variables"><i class="fa fa-check"></i><b>2.4.5</b> Infer Association between categorical variables</a></li>
+<li class="chapter" data-level="2.4.6" data-path="exploring-data.html"><a href="exploring-data.html#comparing-distributions-using-bar-charts-with-relative-frequencies"><i class="fa fa-check"></i><b>2.4.6</b> Comparing distributions using bar charts with relative frequencies</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html"><i class="fa fa-check"></i><b>3</b> Sampling and Experimentation</a><ul>
+<li class="chapter" data-level="3.1" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#methods-of-data-collection"><i class="fa fa-check"></i><b>3.1</b> Methods of data collection</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-census-is-a-collection-of-info.-from-the-entire-population"><i class="fa fa-check"></i><b>3.1.1</b> Knowing census is a collection of info. from the entire population</a></li>
+<li class="chapter" data-level="3.1.2" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-the-distinction-between-experimental-and-observational-stud"><i class="fa fa-check"></i><b>3.1.2</b> Knowing the distinction between experimental and observational stud</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#planning-and-conducting-surveys"><i class="fa fa-check"></i><b>3.2</b> Planning and conducting surveys</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-a-well-conducted-and-designed-survey-must-be-random"><i class="fa fa-check"></i><b>3.2.1</b> Knowing a well conducted and designed survey must be random</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-a-well-conducted-and-designed-survey-must-minimize-bias"><i class="fa fa-check"></i><b>3.2.2</b> Knowing a well conducted and designed survey must minimize bias</a></li>
+<li class="chapter" data-level="3.2.3" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-the-population-of-interest-for-a-sample-survey"><i class="fa fa-check"></i><b>3.2.3</b> Knowing the population of interest for a sample survey</a></li>
+<li class="chapter" data-level="3.2.4" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#distinguishing-between-population-parameter-and-sample-statistics"><i class="fa fa-check"></i><b>3.2.4</b> Distinguishing between population parameter and sample statistics</a></li>
+<li class="chapter" data-level="3.2.5" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-a-sample-was-collected-randomly-addresses-when-sample-collected-with-voluntary-or-convenience"><i class="fa fa-check"></i><b>3.2.5</b> Identifying a sample was collected randomly (addresses when sample collected with voluntary or convenience)</a></li>
+<li class="chapter" data-level="3.2.6" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#understanding-what-a-response-and-non-response-bias-is"><i class="fa fa-check"></i><b>3.2.6</b> Understanding what a response and non-response bias is</a></li>
+<li class="chapter" data-level="3.2.7" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-when-a-sample-is-collected-using-a-simple-random-sample"><i class="fa fa-check"></i><b>3.2.7</b> Identifying when a sample is collected using a simple random sample</a></li>
+<li class="chapter" data-level="3.2.8" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-when-a-sample-is-collected-using-stratified-random-sample"><i class="fa fa-check"></i><b>3.2.8</b> Identifying when a sample is collected using stratified random sample</a></li>
+<li class="chapter" data-level="3.2.9" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-when-a-sample-is-collected-using-cluster-random-sample"><i class="fa fa-check"></i><b>3.2.9</b> Identifying when a sample is collected using cluster random sample</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#planning-and-conducting-experiments"><i class="fa fa-check"></i><b>3.3</b> Planning and conducting experiments</a><ul>
+<li class="chapter" data-level="3.3.1" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-in-an-experiment-that-treatments-are-assigned-randomly"><i class="fa fa-check"></i><b>3.3.1</b> Knowing in an experiment that treatments are assigned randomly</a></li>
+<li class="chapter" data-level="3.3.2" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-in-an-experiment-that-treatments-are-replicated-to-many-subjectsexperimental-units"><i class="fa fa-check"></i><b>3.3.2</b> Knowing in an experiment that treatments are replicated to many subjects/experimental units</a></li>
+<li class="chapter" data-level="3.3.3" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#understanding-the-benefit-for-a-control-group"><i class="fa fa-check"></i><b>3.3.3</b> Understanding the benefit for a control group</a></li>
+<li class="chapter" data-level="3.3.4" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-of-treatments-from-a-multi-factor-experiment-in-curriculum"><i class="fa fa-check"></i><b>3.3.4</b> Identifying # of treatments from a multi-factor experiment (in curriculum?)</a></li>
+<li class="chapter" data-level="3.3.5" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-the-experimental-units-in-an-experiment"><i class="fa fa-check"></i><b>3.3.5</b> Identifying the experimental units in an experiment</a></li>
+<li class="chapter" data-level="3.3.6" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-to-control-variables-that-are-not-a-factor-of-an-experiment-in-curriculum"><i class="fa fa-check"></i><b>3.3.6</b> Knowing to control variables that are not a factor of an experiment (in curriculum?)</a></li>
+<li class="chapter" data-level="3.3.7" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-the-purpose-of-random-assignment-in-experiments"><i class="fa fa-check"></i><b>3.3.7</b> Knowing the purpose of random assignment in experiments</a></li>
+<li class="chapter" data-level="3.3.8" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#understanding-the-difference-between-none-single-and-double-blinded-experiments"><i class="fa fa-check"></i><b>3.3.8</b> Understanding the difference between none, single and double blinded experiments</a></li>
+<li class="chapter" data-level="3.3.9" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#understanding-that-blinding-helps-prevent-bias-in-experiment"><i class="fa fa-check"></i><b>3.3.9</b> Understanding that blinding helps prevent bias in experiment</a></li>
+<li class="chapter" data-level="3.3.10" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#understanding-the-purpose-of-blocking-in-an-experiment"><i class="fa fa-check"></i><b>3.3.10</b> Understanding the purpose of blocking in an experiment</a></li>
+<li class="chapter" data-level="3.3.11" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-between-completely-randomized-and-randomized-block-design"><i class="fa fa-check"></i><b>3.3.11</b> Identifying between completely randomized and randomized block design</a></li>
+<li class="chapter" data-level="3.3.12" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#identifying-a-matched-pairs-design"><i class="fa fa-check"></i><b>3.3.12</b> Identifying a matched pairs design</a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#generalizability-of-results"><i class="fa fa-check"></i><b>3.4</b> Generalizability of results</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-experimental-studies-can-show-causation-whereas-observational-studies-do-not"><i class="fa fa-check"></i><b>3.4.1</b> Knowing experimental studies can show causation whereas observational studies do not</a></li>
+<li class="chapter" data-level="3.4.2" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#knowing-experimental-results-can-only-be-generalized-to-those-represented-by-the-experimental-unit"><i class="fa fa-check"></i><b>3.4.2</b> Knowing experimental results can only be generalized to those represented by the experimental unit</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#miscellaneous"><i class="fa fa-check"></i><b>3.5</b> Miscellaneous</a><ul>
+<li class="chapter" data-level="3.5.1" data-path="sampling-and-experimentation.html"><a href="sampling-and-experimentation.html#when-to-use-stratified-vs.cluster-sampling-homogeneous-groups-vs-heterogeneous-group"><i class="fa fa-check"></i><b>3.5.1</b> When to use stratified vs. cluster sampling (homogeneous groups vs heterogeneous group)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html"><i class="fa fa-check"></i><b>4</b> Anticipating Patterns</a><ul>
+<li class="chapter" data-level="4.1" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#probability"><i class="fa fa-check"></i><b>4.1</b> Probability</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#interpreting-probability-as-a-long-run-relative-frequency-interpretation"><i class="fa fa-check"></i><b>4.1.1</b> Interpreting probability as a long-run relative frequency interpretation</a></li>
+<li class="chapter" data-level="4.1.2" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-the-law-of-large-numbers"><i class="fa fa-check"></i><b>4.1.2</b> Understanding the Law of Large Numbers</a></li>
+<li class="chapter" data-level="4.1.3" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-and-correctly-applying-the-addition-rule"><i class="fa fa-check"></i><b>4.1.3</b> Understanding and correctly applying the Addition Rule</a></li>
+<li class="chapter" data-level="4.1.4" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-and-correctly-applying-the-multiplication-rule"><i class="fa fa-check"></i><b>4.1.4</b> Understanding and correctly applying the Multiplication Rule</a></li>
+<li class="chapter" data-level="4.1.5" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-conditional-probability"><i class="fa fa-check"></i><b>4.1.5</b> Calculating conditional probability</a></li>
+<li class="chapter" data-level="4.1.6" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#recognizing-independent-events"><i class="fa fa-check"></i><b>4.1.6</b> Recognizing independent events</a></li>
+<li class="chapter" data-level="4.1.7" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#recognizing-disjoint-mutually-exclusive-events"><i class="fa fa-check"></i><b>4.1.7</b> Recognizing disjoint (mutually exclusive) events</a></li>
+<li class="chapter" data-level="4.1.8" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#distinguishing-between-discrete-and-continuous-random-variables"><i class="fa fa-check"></i><b>4.1.8</b> Distinguishing between discrete and continuous random variables</a></li>
+<li class="chapter" data-level="4.1.9" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#recognizing-a-binomial-random-variable"><i class="fa fa-check"></i><b>4.1.9</b> Recognizing a binomial random variable</a></li>
+<li class="chapter" data-level="4.1.10" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#computinga-binomial-probability"><i class="fa fa-check"></i><b>4.1.10</b> Computinga binomial probability</a></li>
+<li class="chapter" data-level="4.1.11" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#recognizing-a-geometric-random-variable"><i class="fa fa-check"></i><b>4.1.11</b> Recognizing a geometric random variable</a></li>
+<li class="chapter" data-level="4.1.12" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#computing-a-geometric-probability"><i class="fa fa-check"></i><b>4.1.12</b> Computing a geometric probability</a></li>
+<li class="chapter" data-level="4.1.13" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#computing-cumulative-probability-of-a-discrete-random-variable"><i class="fa fa-check"></i><b>4.1.13</b> Computing cumulative probability of a discrete random variable</a></li>
+<li class="chapter" data-level="4.1.14" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#interpreting-a-simulation-of-random-behavior-or-a-simulated-probability-distribution"><i class="fa fa-check"></i><b>4.1.14</b> Interpreting a simulation of random behavior or a simulated probability distribution</a></li>
+<li class="chapter" data-level="4.1.15" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-the-mean-expected-value-of-a-discrete-random-variable"><i class="fa fa-check"></i><b>4.1.15</b> Calculating the mean (expected value) of a discrete random variable</a></li>
+<li class="chapter" data-level="4.1.16" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-the-standard-deviation-of-a-discrete-random-variable"><i class="fa fa-check"></i><b>4.1.16</b> Calculating the standard deviation of a discrete random variable</a></li>
+<li class="chapter" data-level="4.1.17" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-the-effects-of-a-linear-transformation-on-a-random-variable-i.e.on-the-measures-of-center-and-spread"><i class="fa fa-check"></i><b>4.1.17</b> Understanding the effects of a linear transformation on a random variable (i.e. on the measures of center and spread)</a></li>
+<li class="chapter" data-level="4.1.18" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#using-common-structures-to-analyze-probability-problems-venn-diagram-tree-table"><i class="fa fa-check"></i><b>4.1.18</b> Using common structures to analyze probability problems (Venn diagram, tree, table</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#combining-independent-random-variables"><i class="fa fa-check"></i><b>4.2</b> Combining Independent random variables</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#distinguishing-between-independent-and-dependent-events"><i class="fa fa-check"></i><b>4.2.1</b> Distinguishing between independent and dependent events</a></li>
+<li class="chapter" data-level="4.2.2" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-the-mean-for-the-sum-or-the-difference-of-independent-random-variables"><i class="fa fa-check"></i><b>4.2.2</b> Calculating the mean for the sum or the difference of independent random variables</a></li>
+<li class="chapter" data-level="4.2.3" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-the-standard-deviation-for-the-sum-or-the-difference-of-independent-random-variables"><i class="fa fa-check"></i><b>4.2.3</b> Calculating the standard deviation for the sum or the difference of independent random variables</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#normal-distribution"><i class="fa fa-check"></i><b>4.3</b> Normal Distribution</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-the-characteristics-of-the-normal-distribution-symmetric-68-95-99.7-rule-unimodal-etc."><i class="fa fa-check"></i><b>4.3.1</b> Understanding the characteristics of the normal distribution (symmetric, 68-95-99.7 rule, unimodal, etc.)</a></li>
+<li class="chapter" data-level="4.3.2" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-a-probability-using-the-z-score-and-the-standard-normal-distribution-e.g.-normcdf"><i class="fa fa-check"></i><b>4.3.2</b> Calculating a probability using the z-score and the standard normal distribution (e.g., normcdf)</a></li>
+<li class="chapter" data-level="4.3.3" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-a-z-score-using-probabilities-on-a-normal-distributione.g.-norminv"><i class="fa fa-check"></i><b>4.3.3</b> Calculating a z-score using probabilities on a normal distribution(e.g., norminv)</a></li>
+<li class="chapter" data-level="4.3.4" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#calculating-the-raw-score-given-a-z-score-from-z-to-x"><i class="fa fa-check"></i><b>4.3.4</b> Calculating the raw-score given a z-score (from z to X)</a></li>
+<li class="chapter" data-level="4.3.5" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#using-the-normal-distribution-to-model-and-calculate-measurements-from-a-contextual-application"><i class="fa fa-check"></i><b>4.3.5</b> Using the normal distribution to model and calculate measurements from a contextual application</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#sampling-distributions"><i class="fa fa-check"></i><b>4.4</b> Sampling distributions</a><ul>
+<li class="chapter" data-level="4.4.1" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#interpreting-the-concept-of-a-sampling-distribution"><i class="fa fa-check"></i><b>4.4.1</b> Interpreting the concept of a sampling distribution</a></li>
+<li class="chapter" data-level="4.4.2" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#describing-the-sampling-distribution-of-a-sample-proportion-shape-center-spread"><i class="fa fa-check"></i><b>4.4.2</b> Describing the sampling distribution of a sample proportion (shape, center, spread)</a></li>
+<li class="chapter" data-level="4.4.3" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#describing-the-sampling-distribution-of-a-sample-mean-shape-center-spread"><i class="fa fa-check"></i><b>4.4.3</b> Describing the sampling distribution of a sample mean (shape, center, spread)</a></li>
+<li class="chapter" data-level="4.4.4" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#applying-the-central-limit-theorem"><i class="fa fa-check"></i><b>4.4.4</b> Applying the Central Limit Theorem</a></li>
+<li class="chapter" data-level="4.4.5" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#describing-the-sampling-distribution-of-the-difference-between-two-independent-sample-proportions-shape-center-spread"><i class="fa fa-check"></i><b>4.4.5</b> Describing the sampling distribution of the difference between two independent sample proportions (shape, center, spread)</a></li>
+<li class="chapter" data-level="4.4.6" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#describing-the-sampling-distribution-of-the-difference-between-two-independent-sample-means-shape-center-spread"><i class="fa fa-check"></i><b>4.4.6</b> Describing the sampling distribution of the difference between two independent sample means (shape, center, spread)</a></li>
+<li class="chapter" data-level="4.4.7" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#interpreting-a-simulation-of-a-sampling-distribution"><i class="fa fa-check"></i><b>4.4.7</b> Interpreting a simulation of a sampling distribution</a></li>
+<li class="chapter" data-level="4.4.8" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-characteristics-of-a-t-distribution"><i class="fa fa-check"></i><b>4.4.8</b> Understanding characteristics of a t-distribution</a></li>
+<li class="chapter" data-level="4.4.9" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#using-the-t-distribution-to-calculate-a-probability"><i class="fa fa-check"></i><b>4.4.9</b> Using the t-distribution to calculate a probability</a></li>
+<li class="chapter" data-level="4.4.10" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#using-the-t-distribution-to-obtain-a-t-score-critical-value"><i class="fa fa-check"></i><b>4.4.10</b> Using the t-distribution to obtain a t score (critical value)</a></li>
+<li class="chapter" data-level="4.4.11" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-the-differences-between-a-t-distribution-and-a-normal-distribution"><i class="fa fa-check"></i><b>4.4.11</b> Understanding the differences between a t-distribution and a normal distribution</a></li>
+<li class="chapter" data-level="4.4.12" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#understanding-the-characteristics-of-the-chi-square-distribution"><i class="fa fa-check"></i><b>4.4.12</b> Understanding the characteristics of the chi-square distribution</a></li>
+<li class="chapter" data-level="4.4.13" data-path="anticipating-patterns.html"><a href="anticipating-patterns.html#using-the-chi-square-to-calculate-probability"><i class="fa fa-check"></i><b>4.4.13</b> Using the chi-square to calculate probability</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="statistical-inference.html"><a href="statistical-inference.html"><i class="fa fa-check"></i><b>5</b> Statistical Inference</a><ul>
+<li class="chapter" data-level="5.1" data-path="statistical-inference.html"><a href="statistical-inference.html#estimation"><i class="fa fa-check"></i><b>5.1</b> Estimation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="statistical-inference.html"><a href="statistical-inference.html#margins-of-error-vs-standard-error"><i class="fa fa-check"></i><b>5.1.1</b> Margins of error vs standard error</a></li>
+<li class="chapter" data-level="5.1.2" data-path="statistical-inference.html"><a href="statistical-inference.html#margin-of-errorinterval-length-i.e.-interaction-with-sample-size-andor-level-of-confidence"><i class="fa fa-check"></i><b>5.1.2</b> Margin of error/interval length, i.e., interaction with sample size and/or level of confidence</a></li>
+<li class="chapter" data-level="5.1.3" data-path="statistical-inference.html"><a href="statistical-inference.html#logic-of-confidence-intervals"><i class="fa fa-check"></i><b>5.1.3</b> Logic of confidence intervals</a></li>
+<li class="chapter" data-level="5.1.4" data-path="statistical-inference.html"><a href="statistical-inference.html#interpreting-confidence-level"><i class="fa fa-check"></i><b>5.1.4</b> Interpreting confidence level</a></li>
+<li class="chapter" data-level="5.1.5" data-path="statistical-inference.html"><a href="statistical-inference.html#computing-large-sample-confidence-interval-for-a-proportion"><i class="fa fa-check"></i><b>5.1.5</b> Computing Large sample confidence interval for a proportion</a></li>
+<li class="chapter" data-level="5.1.6" data-path="statistical-inference.html"><a href="statistical-inference.html#computing-large-sample-confidence-interval-for-a-difference-between-two-proportions"><i class="fa fa-check"></i><b>5.1.6</b> Computing Large sample confidence interval for a difference between two proportions</a></li>
+<li class="chapter" data-level="5.1.7" data-path="statistical-inference.html"><a href="statistical-inference.html#computing-confidence-interval-for-a-mean"><i class="fa fa-check"></i><b>5.1.7</b> Computing Confidence interval for a mean</a></li>
+<li class="chapter" data-level="5.1.8" data-path="statistical-inference.html"><a href="statistical-inference.html#computing-confidence-interval-for-a-difference-between-two-means-unpaired"><i class="fa fa-check"></i><b>5.1.8</b> Computing Confidence interval for a difference between two means: unpaired</a></li>
+<li class="chapter" data-level="5.1.9" data-path="statistical-inference.html"><a href="statistical-inference.html#computing-confidence-interval-for-a-difference-between-two-means-paired"><i class="fa fa-check"></i><b>5.1.9</b> Computing Confidence interval for a difference between two means: paired</a></li>
+<li class="chapter" data-level="5.1.10" data-path="statistical-inference.html"><a href="statistical-inference.html#computing-confidence-interval-for-the-slope-of-a-least-squares-regression-line"><i class="fa fa-check"></i><b>5.1.10</b> Computing Confidence interval for the slope of a least-squares regression line</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="statistical-inference.html"><a href="statistical-inference.html#tests-of-significance"><i class="fa fa-check"></i><b>5.2</b> Tests of significance</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="statistical-inference.html"><a href="statistical-inference.html#logic-of-significance-testing-null-and-alternative-hypotheses"><i class="fa fa-check"></i><b>5.2.1</b> Logic of significance testing, null and alternative hypotheses</a></li>
+<li class="chapter" data-level="5.2.2" data-path="statistical-inference.html"><a href="statistical-inference.html#concept-of-p-values-e.g.-using-normcdf-given-a-critical-value"><i class="fa fa-check"></i><b>5.2.2</b> Concept of p-values (e.g., using NORMCDF given a critical value)</a></li>
+<li class="chapter" data-level="5.2.3" data-path="statistical-inference.html"><a href="statistical-inference.html#interpretation-of-a-p-value-e.g.-percentage-of-times-the-sample-result-will-occur-if-the-null-is-true"><i class="fa fa-check"></i><b>5.2.3</b> Interpretation of a p-value (e.g., percentage of times the sample result will occur if the null is true)</a></li>
+<li class="chapter" data-level="5.2.4" data-path="statistical-inference.html"><a href="statistical-inference.html#understandingcomparing-one-and-two-sided-tests"><i class="fa fa-check"></i><b>5.2.4</b> Understanding/Comparing one-and two-sided tests</a></li>
+<li class="chapter" data-level="5.2.5" data-path="statistical-inference.html"><a href="statistical-inference.html#concepts-of-type-i-error"><i class="fa fa-check"></i><b>5.2.5</b> Concepts of Type I error</a></li>
+<li class="chapter" data-level="5.2.6" data-path="statistical-inference.html"><a href="statistical-inference.html#concept-of-type-ii-errors"><i class="fa fa-check"></i><b>5.2.6</b> Concept of Type II errors</a></li>
+<li class="chapter" data-level="5.2.7" data-path="statistical-inference.html"><a href="statistical-inference.html#concept-of-power"><i class="fa fa-check"></i><b>5.2.7</b> Concept of power</a></li>
+<li class="chapter" data-level="5.2.8" data-path="statistical-inference.html"><a href="statistical-inference.html#relationship-among-type-i-and-type-ii-errors-and-power"><i class="fa fa-check"></i><b>5.2.8</b> Relationship among type-I and type-II errors and power</a></li>
+<li class="chapter" data-level="5.2.9" data-path="statistical-inference.html"><a href="statistical-inference.html#effect-of-changing-sample-size-on-type-ii-error-power-for-fixed-level-of-significance"><i class="fa fa-check"></i><b>5.2.9</b> Effect of changing sample size on type II error, power for fixed level of significance</a></li>
+<li class="chapter" data-level="5.2.10" data-path="statistical-inference.html"><a href="statistical-inference.html#conditions-for-inference-for-a-proportion"><i class="fa fa-check"></i><b>5.2.10</b> Conditions for inference for a proportion</a></li>
+<li class="chapter" data-level="5.2.11" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-large-sample-test-for-a-proportion"><i class="fa fa-check"></i><b>5.2.11</b> Performing Large sample test for a proportion</a></li>
+<li class="chapter" data-level="5.2.12" data-path="statistical-inference.html"><a href="statistical-inference.html#conditions-for-inference-for-difference-in-two-proportions"><i class="fa fa-check"></i><b>5.2.12</b> Conditions for inference for difference in two proportions</a></li>
+<li class="chapter" data-level="5.2.13" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-large-sample-test-for-a-difference-between-two-proportions"><i class="fa fa-check"></i><b>5.2.13</b> Performing Large sample test for a difference between two proportions</a></li>
+<li class="chapter" data-level="5.2.14" data-path="statistical-inference.html"><a href="statistical-inference.html#conditions-for-inference-for-a-mean"><i class="fa fa-check"></i><b>5.2.14</b> Conditions for inference for a mean</a></li>
+<li class="chapter" data-level="5.2.15" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-test-for-a-mean"><i class="fa fa-check"></i><b>5.2.15</b> Performing Test for a mean</a></li>
+<li class="chapter" data-level="5.2.16" data-path="statistical-inference.html"><a href="statistical-inference.html#conditions-for-inference-for-a-difference-between-two-means"><i class="fa fa-check"></i><b>5.2.16</b> Conditions for inference for a difference between two means</a></li>
+<li class="chapter" data-level="5.2.17" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-test-for-a-difference-between-two-means-unpaired-t-test"><i class="fa fa-check"></i><b>5.2.17</b> Performing test for a difference between two means: unpaired (t-test)</a></li>
+<li class="chapter" data-level="5.2.18" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-test-for-a-difference-between-two-means-paired-t-test"><i class="fa fa-check"></i><b>5.2.18</b> Performing Test for a difference between two means: paired (t-test)</a></li>
+<li class="chapter" data-level="5.2.19" data-path="statistical-inference.html"><a href="statistical-inference.html#conditions-for-chi-square-test"><i class="fa fa-check"></i><b>5.2.19</b> Conditions for Chi-square test</a></li>
+<li class="chapter" data-level="5.2.20" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-chi-square-test-for-goodness-of-fit"><i class="fa fa-check"></i><b>5.2.20</b> Performing Chi-square test for goodness of fit</a></li>
+<li class="chapter" data-level="5.2.21" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-chi-square-test-for-homogeneity-of-proportions"><i class="fa fa-check"></i><b>5.2.21</b> Performing Chi-square test for homogeneity of proportions</a></li>
+<li class="chapter" data-level="5.2.22" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-chi-square-test-for-independence-two-way-tables"><i class="fa fa-check"></i><b>5.2.22</b> Performing Chi-square test for independence (two-way tables)</a></li>
+<li class="chapter" data-level="5.2.23" data-path="statistical-inference.html"><a href="statistical-inference.html#performing-test-for-the-slope-of-a-least-squares-regression-line"><i class="fa fa-check"></i><b>5.2.23</b> Performing Test for the slope of a least-squares regression line</a></li>
+<li class="chapter" data-level="5.2.24" data-path="statistical-inference.html"><a href="statistical-inference.html#parallel-between-2-sided-test-and-confidence-interval-for-the-means"><i class="fa fa-check"></i><b>5.2.24</b> Parallel between 2-sided test and confidence interval for the means</a></li>
+<li class="chapter" data-level="5.2.25" data-path="statistical-inference.html"><a href="statistical-inference.html#making-decisionconclusion-by-comparing-p-value-and-alpha-r-rnorm10"><i class="fa fa-check"></i><b>5.2.25</b> Making decision/conclusion by comparing p-value and alpha {r rnorm(10)}</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Psychological and Educational Measurement Lab | Notre Dame</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sampling-and-experimentation" class="section level1">
+<h1><span class="header-section-number">3</span> Sampling and Experimentation</h1>
+<p><strong>Planning and conducting a study</strong></p>
+<p>Data must be collected according to a well-developed plan if valid information on a conjecture is to be obtained. This plan includes clarifying the question and deciding upon a method of data collection and analysis.</p>
+<div id="methods-of-data-collection" class="section level2">
+<h2><span class="header-section-number">3.1</span> Methods of data collection</h2>
+<p><strong>Overview of methods of data collection</strong></p>
+<div id="knowing-census-is-a-collection-of-info.-from-the-entire-population" class="section level3">
+<h3><span class="header-section-number">3.1.1</span> Knowing census is a collection of info. from the entire population</h3>
+</div>
+<div id="knowing-the-distinction-between-experimental-and-observational-stud" class="section level3">
+<h3><span class="header-section-number">3.1.2</span> Knowing the distinction between experimental and observational stud</h3>
+</div>
+</div>
+<div id="planning-and-conducting-surveys" class="section level2">
+<h2><span class="header-section-number">3.2</span> Planning and conducting surveys</h2>
+<p><strong>Planning and conducting surveys</strong></p>
+<div id="knowing-a-well-conducted-and-designed-survey-must-be-random" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Knowing a well conducted and designed survey must be random</h3>
+</div>
+<div id="knowing-a-well-conducted-and-designed-survey-must-minimize-bias" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Knowing a well conducted and designed survey must minimize bias</h3>
+</div>
+<div id="knowing-the-population-of-interest-for-a-sample-survey" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Knowing the population of interest for a sample survey</h3>
+</div>
+<div id="distinguishing-between-population-parameter-and-sample-statistics" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Distinguishing between population parameter and sample statistics</h3>
+</div>
+<div id="identifying-a-sample-was-collected-randomly-addresses-when-sample-collected-with-voluntary-or-convenience" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Identifying a sample was collected randomly (addresses when sample collected with voluntary or convenience)</h3>
+</div>
+<div id="understanding-what-a-response-and-non-response-bias-is" class="section level3">
+<h3><span class="header-section-number">3.2.6</span> Understanding what a response and non-response bias is</h3>
+</div>
+<div id="identifying-when-a-sample-is-collected-using-a-simple-random-sample" class="section level3">
+<h3><span class="header-section-number">3.2.7</span> Identifying when a sample is collected using a simple random sample</h3>
+</div>
+<div id="identifying-when-a-sample-is-collected-using-stratified-random-sample" class="section level3">
+<h3><span class="header-section-number">3.2.8</span> Identifying when a sample is collected using stratified random sample</h3>
+</div>
+<div id="identifying-when-a-sample-is-collected-using-cluster-random-sample" class="section level3">
+<h3><span class="header-section-number">3.2.9</span> Identifying when a sample is collected using cluster random sample</h3>
+</div>
+</div>
+<div id="planning-and-conducting-experiments" class="section level2">
+<h2><span class="header-section-number">3.3</span> Planning and conducting experiments</h2>
+<p><strong>Planning and conducting experiments</strong></p>
+<div id="knowing-in-an-experiment-that-treatments-are-assigned-randomly" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Knowing in an experiment that treatments are assigned randomly</h3>
+</div>
+<div id="knowing-in-an-experiment-that-treatments-are-replicated-to-many-subjectsexperimental-units" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Knowing in an experiment that treatments are replicated to many subjects/experimental units</h3>
+</div>
+<div id="understanding-the-benefit-for-a-control-group" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Understanding the benefit for a control group</h3>
+</div>
+<div id="identifying-of-treatments-from-a-multi-factor-experiment-in-curriculum" class="section level3">
+<h3><span class="header-section-number">3.3.4</span> Identifying # of treatments from a multi-factor experiment (in curriculum?)</h3>
+</div>
+<div id="identifying-the-experimental-units-in-an-experiment" class="section level3">
+<h3><span class="header-section-number">3.3.5</span> Identifying the experimental units in an experiment</h3>
+</div>
+<div id="knowing-to-control-variables-that-are-not-a-factor-of-an-experiment-in-curriculum" class="section level3">
+<h3><span class="header-section-number">3.3.6</span> Knowing to control variables that are not a factor of an experiment (in curriculum?)</h3>
+</div>
+<div id="knowing-the-purpose-of-random-assignment-in-experiments" class="section level3">
+<h3><span class="header-section-number">3.3.7</span> Knowing the purpose of random assignment in experiments</h3>
+</div>
+<div id="understanding-the-difference-between-none-single-and-double-blinded-experiments" class="section level3">
+<h3><span class="header-section-number">3.3.8</span> Understanding the difference between none, single and double blinded experiments</h3>
+</div>
+<div id="understanding-that-blinding-helps-prevent-bias-in-experiment" class="section level3">
+<h3><span class="header-section-number">3.3.9</span> Understanding that blinding helps prevent bias in experiment</h3>
+</div>
+<div id="understanding-the-purpose-of-blocking-in-an-experiment" class="section level3">
+<h3><span class="header-section-number">3.3.10</span> Understanding the purpose of blocking in an experiment</h3>
+</div>
+<div id="identifying-between-completely-randomized-and-randomized-block-design" class="section level3">
+<h3><span class="header-section-number">3.3.11</span> Identifying between completely randomized and randomized block design</h3>
+</div>
+<div id="identifying-a-matched-pairs-design" class="section level3">
+<h3><span class="header-section-number">3.3.12</span> Identifying a matched pairs design</h3>
+</div>
+</div>
+<div id="generalizability-of-results" class="section level2">
+<h2><span class="header-section-number">3.4</span> Generalizability of results</h2>
+<p><strong>Generalizability of results and types of conclusions that can be drawn from observational studies experiments and surveys</strong></p>
+<div id="knowing-experimental-studies-can-show-causation-whereas-observational-studies-do-not" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Knowing experimental studies can show causation whereas observational studies do not</h3>
+</div>
+<div id="knowing-experimental-results-can-only-be-generalized-to-those-represented-by-the-experimental-unit" class="section level3">
+<h3><span class="header-section-number">3.4.2</span> Knowing experimental results can only be generalized to those represented by the experimental unit</h3>
+</div>
+</div>
+<div id="miscellaneous" class="section level2">
+<h2><span class="header-section-number">3.5</span> Miscellaneous</h2>
+<p><strong>Miscellaneous</strong></p>
+<div id="when-to-use-stratified-vs.cluster-sampling-homogeneous-groups-vs-heterogeneous-group" class="section level3">
+<h3><span class="header-section-number">3.5.1</span> When to use stratified vs. cluster sampling (homogeneous groups vs heterogeneous group)</h3>
+<div id="random-sampling-variability" class="section level4">
+<h4><span class="header-section-number">3.5.1.1</span> Random sampling variability</h4>
+</div>
+<div id="identifying-confounding-variable" class="section level4">
+<h4><span class="header-section-number">3.5.1.2</span> Identifying confounding variable</h4>
+</div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="exploring-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="anticipating-patterns.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

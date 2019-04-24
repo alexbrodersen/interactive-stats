@@ -31,3 +31,4 @@ Specifically, we hope that you will learn
 
 
 Intermixed in the documentation and learning materials, you may find quizzes to evaluate your learning. These quizzes are linked to your personal login account and help us know that you have successfully completed a module that is relevent. The more modules you complete, the better you will be able to help out the lab.
+
